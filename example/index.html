@@ -1,0 +1,40 @@
+<!-- Special Thanks To Samane Ghazanfari -->
+<!-- GAP LOG -->
+<!-- https://web.gap.im/?p=@clickmisbot -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="h-full">
+  <!-- از خصیصه دایرکشن استفاده میکینیم برای راست چین کردن صفحه چون زبانمونو فارسی کردیم -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🕋﷽🕋</title>
+    <!-- در این بخش نام عنوان صفحه را مینویسیم -->
+    <!--  با استفاده از تگ لینک فرمت صفحه را مشخص میکنیم و فایل سی اس اس و اچ تی ام ال را بهم لینک میکنیم -->
+
+    <script src="./cdn.tailwindcss.com.js"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="h-full">
+    <!-- در بخش بادی تمام محتویات را مینویسیم -->
+    <div id="container" class="h-full flex justify-center items-center">
+      <div class="flex bg-gray-300 p-4 w-[280px] rounded-2xl">
+        <img class="opacity-40" width="48px" src="./assets/Search-Icon.svg" />
+        <input class="bg-transparent ml-6" placeholder="Search" />
+      </div>
+    </div>
+  </body>
+</html>
