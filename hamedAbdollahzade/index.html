@@ -1,46 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="bg-[#34393C] h-full">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>chatPage</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#dbdbdb] box-border">
-    <!-- اینجا w-4/5 معادل 80 درصد عرض بادی در نظر گرفتم  -->
-    <!-- مارجین auto هم دادم برای وسط چین کردن  -->
-
+  <body class="bg-[#34393C] box-border p-4 h-full">
     <div
-      class="flex rounded-xl min-h-screen max-h-screen overflow-hidden bg-[#20232A] ml-5 mr-5 text-white"
+      class="flex rounded-xl h-full overflow-hidden bg-[#202329] ml-5 mr-5 text-white"
     >
-      <div class="overflow-auto  m-1 rounded-lg w-1/3 text-center p-2">
-        <div class="flex rounded-lg h-7 bg-[rgba(28,62,156,0.1)] m-3 relative max-sm:hidden">
-          <label for="inputeSearch">
-            <img
-              src="./img/search.png"
-              class="hover:cursor-pointer p-1 absolute left-0 top-0 w-7"
-              alt="search"
-            />
-          </label>
+      <div class="overflow-auto m-2 rounded-lg w-[324px] text-center p-2">
+        <div
+          class="p-3 flex items-center justify-center rounded-2xl bg-[#2E333D] m-3 relative max-sm:hidden"
+        >
+          <img
+            src="./img/search.png"
+            class="hover:cursor-pointer w-7 ml-1"
+            alt="search"
+          />
           <input
             id="inputeSearch"
             type="search"
             placeholder="search"
-            class="hover:cursor-pointer h-full w-full bg-inherit pl-6 pb-1 rounded-lg"
+            class="hover:cursor-pointer h-full w-full bg-inherit pl-4 pb-1 rounded-lg"
           />
         </div>
 
-        <div class="cursor-pointer">
-          
+        <div class="cursor-pointer flex flex-col gap-6 mt-6">
           <div
-            class="hover:bg-[rgba(28,62,156,0.2)] flex flex-row h-12 w-full overflow-hidden rounded-lg mt-1 relative"
+            class="hover:bg-[rgba(28,62,156,0.2)] flex flex-row w-full overflow-hidden relative bg-[#2E333D] p-3 h-18 rounded-3xl"
           >
             <img
               src="./img/avatar (1).png"
-              class="bg-green-500 rounded-full m-1"
+              class="bg-green-500  rounded-2xl w-14 m-1"
               alt="avatar"
             />
-            <div class="flex flex-col max-sm:hidden">
+            <div class="flex flex-col ml-2 max-sm:hidden">
               <p>hamed Abdollahzade</p>
               <p class="text-xs text-start">matn akharin payam</p>
             </div>
@@ -50,9 +46,9 @@
               9
             </div>
           </div>
-          
+
           <div
-            class=" hover:bg-[rgba(28,62,156,0.2)] flex flex-row h-12 w-full overflow-hidden rounded-lg mt-1 relative"
+            class="hover:bg-[rgba(28,62,156,0.2)] flex flex-row h-12 w-full overflow-hidden rounded-lg mt-1 relative"
           >
             <img
               src="./img/avatar (2).png"
@@ -69,7 +65,7 @@
               5
             </div>
           </div>
-          
+
           <div
             class="hover:bg-[rgba(28,62,156,0.2)] flex flex-row h-12 w-full overflow-hidden rounded-lg mt-1 relative"
           >
@@ -107,7 +103,7 @@
               2
             </div>
           </div>
-          
+
           <div
             class="hover:bg-[rgba(28,62,156,0.2)] flex flex-row h-12 w-full overflow-hidden rounded-lg mt-1 relative"
           >
@@ -117,7 +113,7 @@
               alt="avatar"
             />
             <div class="flex flex-col max-sm:hidden">
-              <p>Ostad aliFarjad </p>
+              <p>Ostad aliFarjad</p>
               <p class="text-xs text-start">matn akharin payam</p>
             </div>
             <div
@@ -126,17 +122,25 @@
               2
             </div>
           </div>
-
         </div>
       </div>
 
-      <div class="flex flex-col w-2/3 m-1 text-start ">
-        <div class=" h-8 text-xs p-2 relative">Hamed Abdollahzade
-          <img class="w-4 absolute right-2 top-2 cursor-pointer" src="./img/menu-vertical.png" alt="menu-vertical">
+      <div class="flex flex-col w-2/3 m-1 text-start">
+        <div class="h-8 text-xs p-2 relative">
+          Hamed Abdollahzade
+          <img
+            class="w-4 absolute right-2 top-2 cursor-pointer"
+            src="./img/menu-vertical.png"
+            alt="menu-vertical"
+          />
         </div>
-        <div class=" flex flex-col justify-center items-center h-4/5 overflow-y-auto  p-2">There is no message</div>
-        
-        <div class="  h-8 flex flex-row relative">
+        <div
+          class="flex flex-col justify-center items-center h-4/5 overflow-y-auto p-2"
+        >
+          There is no message
+        </div>
+
+        <div class="h-8 flex flex-row relative">
           <img
             src="./img/attachment.png"
             alt="attachment"
