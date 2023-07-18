@@ -1,0 +1,352 @@
+<!-- به مرورگر اعلام می کنیم که یک سند استاندارد
+html5 نوشته شده است -->
+<!DOCTYPE html>
+
+<!-- محتوای کلی سند را دربر می گیرد
+و اتریبیوت لانگ زبان سایت را انگلیسی اعلام می کند -->
+<html lang="en" class="dark">
+
+<!-- اطلاعاتی درباره سند برای پردازش ماشین در تگ هد 
+قرار دارد از جمله متاتگ ها و عنوان پنجره مرورگر  -->
+<head>
+
+    <!-- رمزگذاری کاراکتر سند را مشخص می کند -->
+    <meta charset="UTF-8">
+
+    <!-- اندازه و شکل "ویوپورت" قابل مشاهده کاربر را مشخص می کند
+    عرض ویوپورت برابر با عرض دستگاه
+    هنگامی که صفحه برای اولین بار بارگیری می شود،
+    سطح بزرگنمایی یک برابر باشد  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- عنوان پنجره مرورگر را تعیین می کند -->
+    <title>ّFarawinChatS3UI</title>
+
+    <!-- یک تصویر کوچک کنار عنوان پنجره قرار دادم -->
+    <link rel="icon" href="favicon5.ico">
+</head>
+
+<!-- محتوای اصلی و قابل مشاهده سایت در 
+تگ بادی قرار میگیرد و بدنه سایت است -->
+<body class="h-screen flex items-center justify-center ">
+
+  <!-- کل محتوای پنجره پیامرسان از دو بخش 
+  تشکیل شده است _ سکشن لیست مخاطبان و 
+  سکشن مشاهده و ارسال پیام به مخاطب -->
+  <div class="container w-8/12 h-5/6 mx-auto bg-slate-900 rounded-2xl p-6 ring-1 ring-slate-900/5 shadow-xl">
+    
+    <div class="flex space-x-12 h-full overflow-y-hidden">
+      <section class="w-80 min-w-min">
+        <header class="mb-4 h-12">
+          <form class="group relative">
+            <svg width="20" height="20" fill="currentColor" class="absolute left-5 top-1/2 -mt-2.5 text-slate-400 pointer-events-none group-focus-within:text-blue-500" aria-hidden="true">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" />
+            </svg>
+            <input class="bg-slate-800 mt-1 block mx-auto focus:ring-2 focus:ring-slate-500 focus:outline-none appearance-none w-11/12 text-sm leading-6 text-slate-200 placeholder-slate-400 rounded-lg py-2 pl-10 shadow-sm" type="text" aria-label="Filter projects" placeholder="Search">
+          </form>
+        </header>
+
+        <!-- لیست مخاطبین -->
+        <div class="space-y-1 max-h-full overflow-y-auto">
+
+          <!-- هر آیتم مخاطب -->
+          <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm bg-slate-800">
+            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
+              Oc
+            </div>
+            <div class="flex-auto">
+              <div class="flex flex-wrap">
+                <div class="flex-auto text-sm text-slate-200">
+                  Office chat
+                </div>
+                <div class="text-xs text-slate-500">
+                  4m
+                </div>
+                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                  I want to ask you to pick ...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
+            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
+              Oc
+            </div>
+            <div class="flex-auto">
+              <div class="flex flex-wrap">
+                <div class="flex-auto text-sm text-slate-200">
+                  Office chat
+                </div>
+                <div class="text-xs text-slate-500">
+                  4m
+                </div>
+                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                  I want to ask you to pick ...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
+            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
+              Oc
+            </div>
+            <div class="flex-auto">
+              <div class="flex flex-wrap">
+                <div class="flex-auto text-sm text-slate-200">
+                  Office chat
+                </div>
+                <div class="text-xs text-slate-500">
+                  4m
+                </div>
+                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                  I want to ask you to pick ...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
+            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
+              Oc
+            </div>
+            <div class="flex-auto">
+              <div class="flex flex-wrap">
+                <div class="flex-auto text-sm text-slate-200">
+                  Office chat
+                </div>
+                <div class="text-xs text-slate-500">
+                  4m
+                </div>
+                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                  I want to ask you to pick ...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
+            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
+              Oc
+            </div>
+            <div class="flex-auto">
+              <div class="flex flex-wrap">
+                <div class="flex-auto text-sm text-slate-200">
+                  Office chat
+                </div>
+                <div class="text-xs text-slate-500">
+                  4m
+                </div>
+                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                  I want to ask you to pick ...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
+            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
+              عس
+            </div>
+            <div class="flex-auto">
+              <div class="flex flex-wrap">
+                <div class="flex-auto text-sm text-slate-200">
+                  Classic
+                </div>
+                <div class="text-xs text-slate-500">
+                  4m
+                </div>
+                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                  I want to ask you to pick ...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
+            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
+              عس
+            </div>
+            <div class="flex-auto">
+              <div class="flex flex-wrap">
+                <div class="flex-auto text-sm text-slate-200">
+                  Classic
+                </div>
+                <div class="text-xs text-slate-500">
+                  4m
+                </div>
+                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                  I want to ask you to pick ...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
+            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
+              عس
+            </div>
+            <div class="flex-auto">
+              <div class="flex flex-wrap">
+                <div class="flex-auto text-sm text-slate-200">
+                  Classic
+                </div>
+                <div class="text-xs text-slate-500">
+                  4m
+                </div>
+                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                  I want to ask you to pick ...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
+            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
+              عس
+            </div>
+            <div class="flex-auto">
+              <div class="flex flex-wrap">
+                <div class="flex-auto text-sm text-slate-200">
+                  Classic
+                </div>
+                <div class="text-xs text-slate-500">
+                  4m
+                </div>
+                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                  I want to ask you to pick ...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
+            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
+              عس
+            </div>
+            <div class="flex-auto">
+              <div class="flex flex-wrap">
+                <div class="flex-auto text-sm text-slate-200">
+                  Classic
+                </div>
+                <div class="text-xs text-slate-500">
+                  4m
+                </div>
+                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                  I want to ask you to pick ...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
+            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
+              عس
+            </div>
+            <div class="flex-auto">
+              <div class="flex flex-wrap">
+                <div class="flex-auto text-sm text-slate-200">
+                  Classic
+                </div>
+                <div class="text-xs text-slate-500">
+                  4m
+                </div>
+                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                  I want to ask you to pick ...
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="grow flex flex-col">
+        <header class="mb-4 h-12">
+          <h2 class="text-slate-100 text-md font-semibold">
+            Office chat
+          </h2>
+        </header>
+
+        <!-- محتوای پیام های ارسال شده و دریافت شده 
+        را در این دیو قرا دادم -->
+        <div class="overflow-y-auto grow">
+
+          <!-- استایل پیام ارسال شده -->
+          <div class="send_msg flex flex-row-reverse mb-5">
+
+            <!-- آواتار ارسال کننده -->
+            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center self-end text-yellow-300 text-lg font-semibold ml-3 shadow-sm bg-slate-500">
+              Oc
+            </div>
+
+            <!-- پیام ارسال شده -->
+            <div class="space-y-1 w-7/12">
+              <p class="bg-cyan-200 text-slate-900 py-2 px-3 rounded-2xl text-sm">
+                The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
+                <span class="block text-xs text-right text-slate-500">6:24 am</span>
+              </p>
+              <p class="bg-cyan-200 text-slate-900 rounded-br-none py-2 px-3 rounded-2xl text-sm">
+                The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
+                <span class="block text-xs text-right text-slate-500">6:25 am</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- استایل پیام دریافت شده -->
+          <div class="recive_msg flex mb-5">
+
+            <!-- آواتار مخاطب -->
+            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center self-end text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
+              Oc
+            </div>
+
+            <!-- پیام دریافت شده -->
+            <div class="space-y-1 w-7/12">
+              <p class="bg-slate-800 text-slate-500 rounded-bl-none py-2 px-3 rounded-2xl text-sm">
+                The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
+                <span class="block text-xs text-right text-slate-500">7:10 am</span>
+              </p>
+            </div>
+          </div>
+        </div> 
+        
+        <div class="text-xs text-slate-400">
+          <form class="group relative">
+            <img class="absolute w-4 left-5 top-1/2 -mt-2.5 text-slate-400 pointer-events-none group-focus-within:text-blue-500" src="attach16.png" alt="">
+            <input class="bg-slate-900 mb-1 focus:ring-2 focus:ring-slate-500 focus:outline-none appearance-none w-11/12 text-sm leading-6 text-slate-200 placeholder-slate-400 rounded-lg py-2 pl-10 shadow-sm" type="text" aria-label="Filter projects" placeholder="Your message">
+          </form>
+        </div>
+        
+      </section>
+    </div>
+  </div>
+
+
+  <!-- الحاق فایل تیلویند به سند -->
+  <script src="cdn.tailwindcss.com_3.3.2"></script>
+
+  <!-- کانفیگ کردن تیلوند -->
+  <script>
+    module.exports = {
+      darkMode: 'class',
+      theme: {
+        colors: {
+          transparent: 'transparent',
+          current: 'currentColor',
+        },
+        container: {
+          padding: {
+            DEFAULT: '10rem',
+            sm: '2rem',
+            lg: '4rem',
+            xl: '5rem',
+            '2xl': '6rem',
+          },
+        },
+      },
+    };
+  </script>
+</body>
+</html>
