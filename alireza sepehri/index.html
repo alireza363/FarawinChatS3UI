@@ -33,10 +33,14 @@ html5 نوشته شده است -->
   <!-- کل محتوای پنجره پیامرسان از دو بخش 
   تشکیل شده است _ سکشن لیست مخاطبان و 
   سکشن مشاهده و ارسال پیام به مخاطب -->
-  <div class="container w-8/12 h-5/6 mx-auto bg-slate-900 rounded-2xl p-6 ring-1 ring-slate-900/5 shadow-xl">
-    
-    <div class="flex space-x-12 h-full overflow-y-hidden">
-      <section class="w-80 min-w-min">
+  <div class="container 2xl:w-8/12 xl:w-10/12 lg:w-9/12 h-5/6 mx-auto bg-slate-900 rounded-2xl p-6 ring-1 ring-slate-900/5 shadow-xl">
+
+    <div class="flex md:space-x-12 h-full overflow-y-hidden">
+
+      <!-- بخش اول لیست مخاطبان و جستجوی مخاطب -->
+      <section id="section_one" class="2xl:w-80 xl:w-2/4 md:w-8/12 hidden md:block min-w-min">
+
+        <!-- جستجوی مخاطب -->
         <header class="mb-4 h-12">
           <form class="group relative">
             <svg width="20" height="20" fill="currentColor" class="absolute left-5 top-1/2 -mt-2.5 text-slate-400 pointer-events-none group-focus-within:text-blue-500" aria-hidden="true">
@@ -47,11 +51,11 @@ html5 نوشته شده است -->
         </header>
 
         <!-- لیست مخاطبین -->
-        <div class="space-y-1 max-h-full overflow-y-auto">
+        <div id="contact_list" class="space-y-1 max-h-full overflow-y-auto">
 
-          <!-- هر آیتم مخاطب -->
+          <!-- 1 آیتم مخاطب -->
           <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm bg-slate-800">
-            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-orange-500">
+            <div class="avatar w-14 w:md-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-orange-500">
               Oc
             </div>
             <div class="flex-auto">
@@ -62,15 +66,16 @@ html5 نوشته شده است -->
                 <div class="text-xs text-slate-500">
                   4m
                 </div>
-                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                <p class="w-full text-xs font-medium text-slate-500 mt-2">
                   I want to ask you to pick ...
                 </p>
               </div>
             </div>
           </div>
 
+          <!-- آیتم مخاطب 2 -->
           <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
-            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-pink-500">
+            <div class="avatar w-14 w:md-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-pink-500">
               AS
             </div>
             <div class="flex-auto">
@@ -81,15 +86,16 @@ html5 نوشته شده است -->
                 <div class="text-xs text-slate-500">
                   4m
                 </div>
-                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                <p class="w-full text-xs font-medium text-slate-500 mt-2">
                   I want to ask you to pick ...
                 </p>
               </div>
             </div>
           </div>
 
+          <!-- آیتم مخاطب 3 -->
           <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
-            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-green-500">
+            <div class="avatar w-14 w:md-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-green-500">
               t
             </div>
             <div class="flex-auto">
@@ -100,15 +106,16 @@ html5 نوشته شده است -->
                 <div class="text-xs text-slate-500">
                   4m
                 </div>
-                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                <p class="w-full text-xs font-medium text-slate-500 mt-2">
                   I want to ask you to pick ...
                 </p>
               </div>
             </div>
           </div>
 
+          <!-- آیتم مخاطب 4 -->
           <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
-            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-violet-500">
+            <div class="avatar w-14 w:md-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-violet-500">
               Oc
             </div>
             <div class="flex-auto">
@@ -119,15 +126,16 @@ html5 نوشته شده است -->
                 <div class="text-xs text-slate-500">
                   4m
                 </div>
-                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                <p class="w-full text-xs font-medium text-slate-500 mt-2">
                   I want to ask you to pick ...
                 </p>
               </div>
             </div>
           </div>
 
+          <!-- آیتم مخاطب 5 -->
           <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
-            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-red-500">
+            <div class="avatar w-14 w:md-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-red-500">
               Oc
             </div>
             <div class="flex-auto">
@@ -138,15 +146,16 @@ html5 نوشته شده است -->
                 <div class="text-xs text-slate-500">
                   4m
                 </div>
-                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                <p class="w-full text-xs font-medium text-slate-500 mt-2">
                   I want to ask you to pick ...
                 </p>
               </div>
             </div>
           </div>
 
+          <!-- آیتم مخاطب 6 -->
           <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
-            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-sky-500">
+            <div class="avatar w-14 w:md-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-sky-500">
               عس
             </div>
             <div class="flex-auto">
@@ -157,15 +166,16 @@ html5 نوشته شده است -->
                 <div class="text-xs text-slate-500">
                   4m
                 </div>
-                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                <p class="w-full text-xs font-medium text-slate-500 mt-2">
                   I want to ask you to pick ...
                 </p>
               </div>
             </div>
           </div>
 
+          <!-- آیتم مخاطب 7 -->
           <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
-            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-yellow-500">
+            <div class="avatar w-14 w:md-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-yellow-500">
               عس
             </div>
             <div class="flex-auto">
@@ -176,15 +186,16 @@ html5 نوشته شده است -->
                 <div class="text-xs text-slate-500">
                   4m
                 </div>
-                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                <p class="w-full text-xs font-medium text-slate-500 mt-2">
                   I want to ask you to pick ...
                 </p>
               </div>
             </div>
           </div>
 
+          <!-- آیتم مخاطب 8 -->
           <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
-            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-rose-500">
+            <div class="avatar w-14 w:md-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-rose-500">
               عس
             </div>
             <div class="flex-auto">
@@ -195,15 +206,16 @@ html5 نوشته شده است -->
                 <div class="text-xs text-slate-500">
                   4m
                 </div>
-                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                <p class="w-full text-xs font-medium text-slate-500 mt-2">
                   I want to ask you to pick ...
                 </p>
               </div>
             </div>
           </div>
 
+          <!-- آیتم مخاطب 9 -->
           <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
-            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-purple-500">
+            <div class="avatar w-14 w:md-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-purple-500">
               عس
             </div>
             <div class="flex-auto">
@@ -214,15 +226,16 @@ html5 نوشته شده است -->
                 <div class="text-xs text-slate-500">
                   4m
                 </div>
-                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                <p class="w-full text-xs font-medium text-slate-500 mt-2">
                   I want to ask you to pick ...
                 </p>
               </div>
             </div>
           </div>
 
+          <!-- آیتم مخاطب 10 -->
           <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
-            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
+            <div class="avatar w-14 w:md-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
               عس
             </div>
             <div class="flex-auto">
@@ -233,15 +246,16 @@ html5 نوشته شده است -->
                 <div class="text-xs text-slate-500">
                   4m
                 </div>
-                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                <p class="w-full text-xs font-medium text-slate-500 mt-2">
                   I want to ask you to pick ...
                 </p>
               </div>
             </div>
           </div>
 
+          <!-- آیتم مخاطب 11 -->
           <div class="flex font-sans w-full leading-6 text-slate-200 rounded-xl p-3 shadow-sm">
-            <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
+            <div class="avatar w-14 w:md-12 h-11 rounded-xl flex items-center justify-center text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-slate-500">
               عس
             </div>
             <div class="flex-auto">
@@ -252,36 +266,35 @@ html5 نوشته شده است -->
                 <div class="text-xs text-slate-500">
                   4m
                 </div>
-                <p class="w-full text-sm font-medium text-slate-700 mt-2">
+                <p class="w-full text-xs font-medium text-slate-500 mt-2">
                   I want to ask you to pick ...
                 </p>
               </div>
             </div>
           </div>
+        </div> <!-- end of contact_list انتهای لیست مخاطب-->
+      </section> <!-- end of section_one -->
 
-        </div>
-      </section>
+      <!-- بخش دوم شامل پیام ها و کادر ارسال پیام -->
+      <section id="section_two" class="grow flex flex-col">
 
-      <section class="grow flex flex-col">
-        <header class="mb-4 h-12">
+        <!-- نام مخاطب انتخاب شده -->
+        <header class="mb-4 h-12 flex justify-between">
           <h2 class="text-slate-100 text-md font-semibold">
             Office chat
           </h2>
+          <img id="menu_vertical" class="self-start cursor-pointer" src="menu-vertical16.png" alt="">
         </header>
 
         <!-- محتوای پیام های ارسال شده و دریافت شده 
-        را در این دیو قرا دادم -->
-        <div class="overflow-y-auto grow">
+        را در این دیو قرار دادم -->
+        <div id="message_box" class="overflow-y-auto grow">
 
-          <!-- استایل پیام دریافت شده -->
+          <!-- باکس پیام دریافت شده از مخاطب -->
           <div class="recive_msg flex mb-5">
-
-            <!-- آواتار مخاطب -->
             <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center self-end text-yellow-300 text-lg font-semibold mr-3 shadow-sm bg-pink-500">
               AS
             </div>
-
-            <!-- پیام دریافت شده -->
             <div class="space-y-1 w-7/12">
               <p class="bg-slate-800 text-slate-500 rounded-bl-none py-2 px-3 rounded-2xl text-sm">
                 The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
@@ -290,15 +303,11 @@ html5 نوشته شده است -->
             </div>
           </div>
 
-          <!-- استایل پیام ارسال شده -->
+          <!-- باکس پیام ارسال شده از طریق کاربر -->
           <div class="send_msg flex flex-row-reverse mb-5">
-
-            <!-- آواتار ارسال کننده -->
             <div class="avatar w-12 h-11 rounded-xl flex items-center justify-center self-end text-yellow-300 text-lg font-semibold ml-3 shadow-sm bg-orange-500">
               Oc
             </div>
-
-            <!-- پیام ارسال شده -->
             <div class="space-y-1 w-7/12">
               <p class="bg-cyan-200 text-slate-900 py-2 px-3 rounded-2xl text-sm">
                 The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even works in outer space.
@@ -311,16 +320,17 @@ html5 نوشته شده است -->
             </div>
           </div>
 
-        </div> 
-        
+        </div> <!-- end of message_box -->
+
+        <!-- باکس ارسال پیام -->
         <div class="text-xs text-slate-400">
           <form class="group relative">
             <img class="absolute w-4 left-5 top-1/2 -mt-2.5 text-slate-400 pointer-events-none group-focus-within:text-blue-500" src="attach16.png" alt="">
-            <input class="bg-slate-900 mb-1 focus:ring-2 focus:ring-slate-500 focus:outline-none appearance-none w-11/12 text-sm leading-6 text-slate-200 placeholder-slate-400 rounded-lg py-2 pl-10 shadow-sm" type="text" aria-label="Filter projects" placeholder="Your message">
+            <input class="bg-slate-900 mb-1 ml-1 focus:ring-2 focus:ring-slate-500 focus:outline-none appearance-none w-11/12 text-sm leading-6 text-slate-200 placeholder-slate-400 rounded-lg py-2 pl-10 mt-1 shadow-sm" type="text" aria-label="Filter projects" placeholder="Your message">
           </form>
         </div>
-        
-      </section>
+      </section> <!-- end of section_two -->
+
     </div>
   </div>
 
@@ -338,13 +348,13 @@ html5 نوشته شده است -->
           current: 'currentColor',
         },
         container: {
-          padding: {
-            DEFAULT: '10rem',
-            sm: '2rem',
-            lg: '4rem',
-            xl: '5rem',
-            '2xl': '6rem',
-          },
+          // padding: {
+          //   DEFAULT: '10rem',
+          //   sm: '2rem',
+          //   lg: '4rem',
+          //   xl: '5rem',
+          //   '2xl': '6rem',
+          // },
         },
       },
     };
