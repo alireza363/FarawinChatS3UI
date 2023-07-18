@@ -1,0 +1,366 @@
+<!-- #region doc -->
+<!-- برای تعیین کردن نوع فایلم به مرورگر -->
+<!DOCTYPE html>
+<!-- #endregion -->
+<!-- #region html -->
+<!-- این تگ برای تعیین نوع سند هست و در آن از اتربیوت لنگ استفاده میکنیم برای تعیین زبان بیشتر سایت و از اتربیوت دایرکشن استفاده میکنیم برای چپ به راست یا راست به چپ سایت-->
+<!-- While HTML does not require authors to specify <html> element start and ending tags, it is important for authors to do so as it will allow them to specify the lang for the webpage.  -->
+<html lang="en" dir="ltr">
+  <!-- #region head -->
+  <!-- az tag head baraye vizhegi hayii nazir seo va yek seri moshakhasat koli estefde miknim -->
+  <!-- be tor mesal tag meta aval type decode documentmono moshakhas mikne va
+          tag meta dovom miad andaze safhe ro ba meghyas va resolotion safhe set mikne
+          va tag title ham baraye moshkhas kardn title sfahatemon hast -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="tailwindOutPut.css" />
+    <link rel="stylesheet" href="font.css" />
+    <script src="3.3.js"></script>
+  </head>
+  <!-- #endregion -->
+  <!-- #region body -->
+  <!-- khob tag body badane safhe hamon hast va har chizi ki bkhhim dakhel safhehamon bashe dar inja code miznim -->
+  <body>
+    <!-- #region Main Container for center items -->
+    <div class="flex items-center justify-center h-screen w-screen">
+      <!-- #region MainBox for ChatPage -->
+      <div
+        class="w-screen h-screen p-[35px] bg-[#21242B] text-[#FAFBFD] rounded-[35px] flex"
+      >
+        <!-- #region sideBar for Search and Contacts -->
+        <div id="sideBar" class="flex flex-col">
+          <!-- #region SearchBar -->
+          <div class="flex rounded-[15px] bg-[#30323E] w-fit p-[15px] box-border">
+            <div class="hover:cursor-pointer w-[25px]">
+              <img src="Screenshot 2023-07-17 121255.png" alt="searchIcon"/>
+            </div>
+            <div class="ml-[10px]">
+              <input
+                type="text"
+                placeholder="Search"
+                class="bg-[#30323E] text-[18px] grow h-full border-none focus:outline-none w-[190px]"
+              />
+            </div>
+          </div>
+          <!-- #endregion -->
+          <!-- #region ContactContainer -->
+          <div class="grow">
+            <!-- #region FirstContact -->
+            <div class="mt-[22px] mb-[7px] ml-[-7px] relative">
+              <div
+                class="flex p-[12px] hover:cursor-pointer bg-[#2F313D] rounded-[20px]"
+              >
+                <div
+                  class="bg-[#A9D2FE] rounded-[14px] w-[50px] h-[50px] text-center pt-[11px] text-[18px] text-black"
+                >
+                  SS
+                </div>
+                <div class="grow ml-[5px]">
+                  <div class="hidden"></div>
+                  <div class="align-middle text-[18px]">Saeed Saadatifar</div>
+                  <div class="text-[#888890] text-[14px]">Last&#160;Message</div>
+                  <div class="absolute top-[10px] right-[10px]">4 m</div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+            <!-- #region SecondContact -->
+            <div class="mb-[7px] relative">
+              <div
+                class="flex p-[8px] hover:cursor-pointer hover:bg-[#2F313D] rounded-[20px]"
+              >
+                <div
+                  class="bg-[#CD4039] rounded-[14px] w-[50px] h-[50px] text-center pt-[11px] text-[18px] text-black"
+                >
+                  AF
+                </div>
+                <div class="grow ml-[5px]">
+                  <div class="hidden"></div>
+                  <div class="align-middle text-[18px]">Ali Farjad</div>
+                  <div class="text-[#888890] text-[14px]">Last&#160;Message</div>
+                  <div class="absolute top-[10px] right-[10px]">10 m</div>
+                  <div class="bg-[#7186FF] absolute rounded-[50%] px-[5px] text-[12px] top-[39px] right-[10px]">5</div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+            <!-- #region ThirdContact -->
+            <div class="mb-[7px] relative">
+              <div
+                class="flex p-[8px] hover:cursor-pointer hover:bg-[#2F313D] rounded-[20px]"
+              >
+                <div
+                  class="bg-[#4AAD6A] rounded-[14px] w-[50px] h-[50px] text-center pt-[11px] text-[18px] text-black"
+                >
+                  AP
+                </div>
+                <div class="grow ml-[5px]">
+                  <div class="hidden"></div>
+                  <div class="align-middle text-[18px]">Alireza Parhizkar</div>
+                  <div class="text-[#888890] text-[14px]">Last&#160;Message</div>
+                  <div class="absolute top-[10px] right-[10px]">1 h</div>
+                  <div class="bg-[#7186FF] absolute rounded-[50%] px-[5px] text-[12px] top-[39px] right-[10px]">1k</div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+            <!-- #region 4ThContact -->
+            <div class="mb-[7px] relative">
+              <div
+                class="flex p-[8px] hover:cursor-pointer hover:bg-[#2F313D] rounded-[20px]"
+              >
+                <div
+                  class="bg-[#FECCA7] rounded-[14px] w-[50px] h-[50px] text-center pt-[11px] text-[18px] text-black"
+                >
+                  HA
+                </div>
+                <div class="grow ml-[5px]">
+                  <div class="hidden"></div>
+                  <div class="align-middle text-[18px]">Hamed Abdollahz...</div>
+                  <div class="text-[#888890] text-[14px]">Last&#160;Message</div>
+                  <div class="absolute top-[10px] right-[10px]">3 h</div>
+                  <div class="bg-[#7186FF] absolute rounded-[50%] px-[5px] text-[12px] top-[39px] right-[10px]">5</div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+            <!-- #region 5ThContact -->
+            <div class="mb-[7px] relative">
+              <div
+                class="flex p-[8px] hover:cursor-pointer hover:bg-[#2F313D] rounded-[20px]"
+              >
+                <div
+                  class="bg-[#CD4039] rounded-[14px] w-[50px] h-[50px] text-center pt-[11px] text-[18px] text-black"
+                >
+                  MG
+                </div>
+                <div class="grow ml-[5px]">
+                  <div class="hidden"></div>
+                  <div class="align-middle text-[18px]">Mojtaba Ghas...</div>
+                  <div class="text-[#888890] text-[14px]">Last&#160;Message</div>
+                  <div class="absolute top-[10px] right-[10px]">Yesterday</div>
+                  <div class="bg-[#7186FF] absolute rounded-[50%] px-[5px] text-[12px] top-[39px] right-[10px]">5</div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+            <!-- #region 6THContact -->
+            <div class="mb-[7px] relative">
+              <div
+                class="flex p-[8px] hover:cursor-pointer hover:bg-[#2F313D] rounded-[20px]"
+              >
+                <div
+                  class="bg-[#FFE6A7] rounded-[14px] w-[50px] h-[50px] text-center pt-[11px] text-[18px] text-black"
+                >
+                  AF
+                </div>
+                <div class="grow ml-[5px]">
+                  <div class="hidden"></div>
+                  <div class="align-middle text-[18px]">Ali Farjad</div>
+                  <div class="text-[#888890] text-[14px]">Last&#160;Message</div>
+                  <div class="absolute top-[10px] right-[10px]">7 Nov</div>
+                  <div class="absolute top-[15px] right-[53px]"><img src="Screenshot 2023-07-17 201104.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+            <!-- #region 7ThContact -->
+            <div class="mb-[7px] relative">
+              <div
+                class="flex p-[8px] hover:cursor-pointer hover:bg-[#2F313D] rounded-[20px]"
+              >
+                <div
+                  class="bg-[#4AAD6A] rounded-[14px] w-[50px] h-[50px] text-center pt-[11px] text-[18px] text-black"
+                >
+                  AP
+                </div>
+                <div class="grow ml-[5px]">
+                  <div class="hidden"></div>
+                  <div class="align-middle text-[18px]">Alireza Parhiz...</div>
+                  <div class="text-[#888890] text-[14px]">Last&#160;Message</div>
+                  <div class="absolute top-[10px] right-[10px]">10 Sep</div>
+                  <div class="absolute top-[15px] right-[48px]"><img src="Screenshot 2023-07-17 201104.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+            <!-- #region 8ThContact -->
+            <div class="mb-[7px] relative">
+              <div
+                class="flex p-[8px] hover:cursor-pointer hover:bg-[#2F313D] rounded-[20px]"
+              >
+                <div
+                  class="bg-[#FECCA7] rounded-[14px] w-[50px] h-[50px] text-center pt-[11px] text-[18px] text-black"
+                >
+                  HA
+                </div>
+                <div class="grow ml-[5px]">
+                  <div class="hidden"></div>
+                  <div class="align-middle text-[18px]">Hamed Abdollah...</div>
+                  <div class="text-[#888890] text-[14px]">Last&#160;Message</div>
+                  <div class="absolute top-[10px] right-[10px]">17 Jul</div>
+                  <div class="bg-[#7186FF] absolute rounded-[50%] px-[5px] text-[12px] top-[39px] right-[10px]">11</div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+            <!-- #region 9THContact -->
+            <div class="mb-[7px] relative">
+              <div
+                class="flex p-[8px] hover:bg-[#2F313D] hover:cursor-pointer rounded-[20px]"
+              >
+                <div
+                  class="bg-[#A9D2FE] rounded-[14px] w-[50px] h-[50px] text-center pt-[11px] text-[18px] text-black"
+                >
+                  SS
+                </div>
+                <div class="grow ml-[5px]">
+                  <div class="hidden"></div>
+                  <div class="align-middle text-[18px]">Saeed Saadatif...</div>
+                  <div class="text-[#888890] text-[14px]">Last&#160;Message</div>
+                  <div class="absolute top-[10px] right-[10px]">23 Jun</div>
+                  <div class="absolute top-[15px] right-[53px]"><img src="Screenshot 2023-07-17 201104.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <!-- #endregion -->
+          </div>
+          <!-- #endregion -->
+        </div>
+        <!-- #endregion -->
+        <!-- #region ChatBox -->
+        <div class="flex flex-col grow ml-[35px]  h-full">
+          <!-- #region ChatingHeader -->
+          <div class="h-[70px] w-full rounded-[20px] flex">
+            <div
+              id="headerContact"
+              class="flex grow p-[5px] hover:cursor-default rounded-[14px]"
+            >
+              <div
+                id="avatarHeaderContact"
+                class="bg-[#A9D2FE] rounded-[14px] w-[50px] h-[50px] text-center pt-[11px] text-[18px] text-black"
+              >
+                SS
+              </div>
+              <div
+                id="nameHeaderContact"
+                class="align-middle text-[18px] ml-[8px] pt-[11px]"
+              >
+                Saeed Saadatifar
+              </div>
+            </div>
+            <div
+              id="sideBarIcon"
+              class="mt-[11px] px-[10px] py-[5px] w-[27px] text-2xl h-fit rounded-[15px] hover:cursor-pointer hover:bg-[#2F313D]"
+            >
+              <img src="Screenshot 2023-07-17 141104.png" alt="" />
+            </div>
+          </div>
+          <!-- #endregion -->
+          <!-- #region ChatBox -->
+          <div id="messageBox" class="grow w-full pl-[10px] h-full">
+            <div
+              id="Messages1Contact"
+              class="flex flex-col justify-end w-full h-full"
+            >
+            <div class="self-center bg-[#2F313D] px-[40px] rounded-[15px]">
+              Today
+            </div>
+              <div class="flex self-end w-3/4 justify-end m-[5px]">
+                <div class="bg-[#6B8AFE] p-2.5 rounded-[20px] relative">
+                  <div class="text-[18px] font-mono mb-[6px]">
+                    Saeed Saadatifar
+                  </div>
+                  <div
+                    class="before:absolute before:border-[#6B8AFE] before:border-[25px] before:right-[-16px] before:bottom-[0px] before:border-r-transparent before:border-l-transparent before:border-t-transparent before:rounded-[40%] grow text-[14px]"
+                  >
+                    Hi How Are You?
+                  </div>
+                  <div class="bottom-[7px] text-right pr-[11px] text-[10px]">
+                    20:41
+                  </div>
+                </div>
+                <div
+                  class="bg-[#A9D2FE] hover:cursor-default self-end ml-[15px] rounded-[14px] w-[50px] h-[50px] text-center shrink-0 pt-[11px] text-[18px] text-black"
+                >
+                  SS
+                </div>
+              </div>
+              <div lastMessage="1" class="flex w-3/4 m-[5px]">
+                <div
+                  class="bg-[#A9D2FE] shrink-0 self-end hover:cursor-default mr-[15px] rounded-[14px] w-[50px] h-[50px] text-center pt-[11px] text-[18px] text-black"
+                >
+                  AF
+                </div>
+                <div
+                  class="bg-[#30323E] self-end p-2.5 rounded-[20px] relative"
+                >
+                  <div class="text-[18px] mb-[6px]">Ali Farjad</div>
+                  <div
+                    class="before:absolute before:border-[#30323E] before:border-[25px] before:left-[-16px] before:bottom-[0px] before:border-r-transparent before:border-l-transparent before:border-t-transparent before:rounded-[40%] grow text-[14px]"
+                  >
+                    Hi Thnanks, How Are You?
+                  </div>
+                  <div class="bottom-[7px] text-right text-[10px] pr-[11px]">
+                    20:42
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- #endregion -->
+          <!-- #region TypeBar -->
+          <div class="w-full h-[60px] flex">
+            <div
+              class="mt-[19px] mr-[3px] w-[18px] h-fit rounded-[15px] hover:cursor-pointer hover:bg-[#2F313D]"
+            >
+              <img src="Screenshot 2023-07-17 191127.png" alt="" />
+            </div>
+            <!-- #region inputTypeMessage -->
+            <input
+              id="inputTypeMessage"
+              type="text"
+              placeholder="Your Message"
+              class="text-[16px] grow h-[52px] ml-[5px] bg-[#21242B] border-none focus:outline-none text-[#FAFBFD]"
+            />
+            <!-- #endregion -->
+            <!-- #region SendIcon -->
+            <svg
+              id="sendMessageIcon"
+              width="30"
+              height="30"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="hidden rotate-[45deg] self-center hover:cursor-pointer hover:fill-[#2F313D]"
+            >
+              <path d="M48 0H0V48H48V0Z" fill="none" fill-opacity="0" />
+              <path
+                d="M42 6L4 20.1383L24 24.0083L29.0052 44L42 6Z"
+                stroke="#FAFBFD"
+                stroke-width="1"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M24.0083 24.0083L29.6651 18.3515"
+                stroke="#FAFBFD"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <!-- #endregion -->
+          </div>
+          <!-- #endregion -->
+        </div>
+        <!-- #endregion -->
+      </div>
+      <!-- #endregion -->
+    </div>
+    <!-- #endregion -->
+  </body>
+  <!-- #endregion -->
+</html>
+<!-- #endregion -->
