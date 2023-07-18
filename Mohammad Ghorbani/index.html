@@ -2,34 +2,79 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=4.0" />
     <title>/Chat</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#dbdbdb] box-border">
-    <div class="h-screen w-screen flex flex-row">
-      <div class="w-1/3 h-screen bg-[rgb(32,35,41)]">
-        <label
-          class="w-25 h-12 ml-4 mr-5 mt-5 mb-5 flex flex-row rounded-lg bg-[rgb(46,51,61)]"
-        >
+  <body class="bg-[#34393C] w-screen h-screen pl-5 pt-0.5 pr-5 pb-10">
+    <div
+      class="w-full h-full m-auto mt-5 p-2 rounded-3xl flex flex-row bg-[#202329]"
+    >
+      <!-- container -->
+      <div class="flex flex-col w-1/3 h-full">
+        <!-- sidebar -->
+        <div class="h-20 flex flex-row rounded-2xl m-7 bg-[#2E333D]">
+          <!-- search -->
           <img src="Assets/icons8-search-48.png" alt="Search" />
           <input
             type="search"
             placeholder="Search"
-            class="w-full h-full pl-1 rounded-lg bg-[rgb(46,51,61)]"
+            class="w-5/6 h-5/6 pl-1 mr-2 rounded- bg-inherit m-auto"
           />
-        </label>
-        <div>contact</div>
+        </div>
+        <div class="w-11/12 h-full rounded-2xl m-auto flex flex-col">
+          <!-- contact -->
+          <div class="hover:bg-[#2E333D] rounded-3xl h-1/6 text-center">
+            test 1
+          </div>
+          <div class="hover:bg-[#2E333D] rounded-3xl h-1/6 text-center">
+            test 2
+          </div>
+          <div class="hover:bg-[#2E333D] rounded-3xl h-1/6 text-center">
+            test 3
+          </div>
+          <div class="hover:bg-[#2E333D] rounded-3xl h-1/6 text-center">
+            test 4
+          </div>
+          <div class="hover:bg-[#2E333D] rounded-3xl h-1/6 text-center">
+            test 5
+          </div>
+          <div class="hover:bg-[#2E333D] rounded-3xl h-1/6 text-center">
+            test 6
+          </div>
+        </div>
       </div>
-      <div class="w-2/3 h-screen flex flex-col bg-[rgb(32,35,41)]">
-        <div class="pl-5 w-full h-20">header</div>
-        <div class="pl-5 w-full h-5/6">pv</div>
-        <div class="pl-5 w-full h-14 flex flex-row justify-center">
-          <input
-            placeholder="Your message"
-            type="text"
-            class="w-5/6 h-5/6 rounded-lg bg-[rgb(32,35,41)] pl-5"
+      <div class="w-2/3 h-full flex flex-col bg-[#202329]">
+        <!-- chat -->
+        <div class="pl-5 w-full h-20 flex flex-row justify-between">
+          <!-- head -->
+          <div class="">
+            <!-- profile -->
+          </div>
+          <img
+            class="w-8 h-8 mt-12 mr-6"
+            src="Assets/icons8-more-50.png"
+            alt="more"
           />
+        </div>
+        <div class="pl-5 w-full h-5/6">
+          <!-- pv -->
+        </div>
+        <div class="w-full h-14">
+          <div class="w-full h-full rounded-3xl flex">
+            <img
+              class="w-8 h-8 ml-8 m-auto"
+              src="Assets/icons8-attach-48.png"
+              alt="Attach"
+            />
+            <input
+              placeholder="Your message"
+              type="text"
+              class="bg-inherit w-11/12 h-5/6 m-auto"
+            />
+          </div>
+          <!-- sender -->
         </div>
       </div>
     </div>
